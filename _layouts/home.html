@@ -1,0 +1,49 @@
+---
+layout: default
+pagination:
+  enabled: true
+---
+
+<main class="main-section">
+  {% for post in paginator.posts %}
+    <article>
+      {%- include
+        article_header.html
+        post_url=post.url
+        post_title=post.title
+        post_date=post.date
+        post_tags=post.tags
+        post_categories=post.categories
+      -%}
+
+      <div class="content-post">
+        {{ post.content }}
+      </div>
+    </article>
+
+    <hr class="post-separator">
+  {% endfor %}
+
+  {% if paginator.page_trail %}
+    <footer>
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a class="extend prev" rel="prev" href="{{ paginator.previous_page_path }}">Anterior</a>
+        {% endif %}
+
+        {% for trail in paginator.page_trail %}
+          {% if page.url == trail.path %}
+            <span class="page-number current">{{ paginator.page }}</span>
+          {% else %}
+            <a class="page-number" href="{{ trail.path }}">{{ trail.num }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <a class="extend next" rel="next" href="{{ paginator.next_page_path }}">Próximo</a>
+        {% endif %}
+      </div>
+    </footer>
+  {% endif %}
+</main>
+

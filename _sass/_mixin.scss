@@ -1,0 +1,7 @@
+@mixin mobile-menu-transition($pos, $time) {
+  transform: translateX($pos);
+  -webkit-transition: all $time linear;
+  -moz-transition: all $time linear;
+  -ms-transition: all $time linear;
+  transition: all $time linear;
+}

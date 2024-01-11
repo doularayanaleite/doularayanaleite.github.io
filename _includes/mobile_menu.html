@@ -1,0 +1,15 @@
+<aside id="mobileMenu" class="mobile-menu mobile-menu-hidden">
+  <a id="menuClose" class="menu-close-btn" href="javascript:void(0);">
+    <i class="fa fa-close" aria-hidden="true"></i>
+  </a>
+
+  <nav class="page-links">
+    <ul>
+      {% for menu in site.menu %}
+        <li>
+          <a href="{{ menu.path }}">{{ menu.label }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</aside>

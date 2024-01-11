@@ -1,0 +1,1 @@
+"use strict";var toggleMobileMenu=function(e){var t=document.getElementById("mobileMenu");t.classList.toggle("mobile-menu-show"),t.classList.toggle("mobile-menu-hidden"),e.preventDefault()};document.getElementById("menuBar").addEventListener("click",toggleMobileMenu),document.getElementById("menuClose").addEventListener("click",toggleMobileMenu);
