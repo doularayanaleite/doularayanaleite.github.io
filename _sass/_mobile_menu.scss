@@ -1,54 +1,54 @@
-// // Mobile Menu
-// .mobile-menu {
-//   background: $principal-color;
-//   height: 100%;
-//   position: fixed;
-//   right: -250px;
-//   top: 0;
-//   width: 250px;
-//   z-index: 2;
+// Mobile Menu
+.mobile-menu {
+  background: $principal-color;
+  height: 100%;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  z-index: 2;
 
-//   a {
-//     color: #ffffff;
-//   }
-// }
+  a {
+    color: #ffffff;
+  }
+}
 
-// .mobile-menu-show {
-//   @include mobile-menu-transition(-250px, $transition-time);
-// }
+.mobile-menu-show {
+  @include mobile-menu-transition(-250px, $transition-time);
+}
 
-// .mobile-menu-hidden {
-//   @include mobile-menu-transition(0, $transition-time);
-// }
+.mobile-menu-hidden {
+  @include mobile-menu-transition(0, $transition-time);
+}
 
-// .menu-close-btn {
-//   display: block;
-//   font-size: 31px;
-//   padding: 10px 15px;
-//   text-align: right;
-// }
+.menu-close-btn {
+  display: block;
+  font-size: 31px;
+  padding: 10px 15px;
+  text-align: right;
+}
 
-// .page-links {
-//   display: block;
-//   font-size: 20px;
-//   padding: 10px 15px;
+.page-links {
+  display: block;
+  font-size: 20px;
+  padding: 10px 15px;
 
-//   a {
-//     border: 0;
-//     border-top: $border;
-//     display: block;
-//     padding: 15px 0;
-//     width: 220px;
-//   }
+  a {
+    border: 0;
+    border-top: $border;
+    display: block;
+    padding: 15px 0;
+    width: 220px;
+  }
 
-//   a:active,
-//   a:hover {
-//     text-decoration: none;
-//   }
+  a:active,
+  a:hover {
+    text-decoration: none;
+  }
 
-//   li:last-child {
-//     border: 0;
-//     border-bottom: $border;
-//     width: 220px;
-//   }
-// }
+  li:last-child {
+    border: 0;
+    border-bottom: $border;
+    width: 220px;
+  }
+}

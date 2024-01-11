@@ -53,3 +53,16 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+menu:
+  - home:
+    label: Serviços
+    path: '/'
+  - blog:
+    label: Depoimentos
+    path: '/'
+  - about:
+    label: Dúvidas Frequentes
+    path: '/'
+  - about:
+    label: Contatos
+    path: '/'

@@ -1,73 +1,87 @@
 // // Header
-// .header {
-//   background-color: #ffffff;
-//   box-shadow: 0 1px 3px #dddddd;
-//   display: block;
-//   margin-bottom: 25px;
-//   position: fixed;
-//   width: 100%;
-//   z-index: 1;
-// }
+.header {
+  background-color: $principal-color;
+  box-shadow: 0 1px 3px #dddddd;
+  display: block;
+  margin-bottom: 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 
-// .header-content {
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding: 0 15px;
-//   position: relative;
+.header-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  position: relative;
 
-//   h1 {
-//     display: inline;
-//     font-size: 31px;
-//   }
+  img {
+    height: 150px;
+    display: inline;
+  }
+  // h1 {
+  //   display: inline;
+  //   font-size: 31px;
+  //   // color: red;
+  // }
 
-//   a {
-//     padding: 10px 0;
-//   }
-// }
+  // a {
+  //   padding: 10px 0;
+  // }
+}
 
-// .site-title {
-//   float: left;
-// }
+.site-title {
+  float: left;
+}
 
-// .mobile-menu-bar {
-//   float: right;
-//   font-size: 31px;
-// }
+.mobile-menu-bar {
+  float: right;
+  font-size: 31px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
 
-// .header-menu {
-//   display: none;
-//   float: right;
+.header-menu {
+  display: none;
+  float: right;
 
-//   li {
-//     display: inline-flex;
-//     font-size: 21px;
-//   }
+  padding-top: 44px;
+  padding-bottom: 44px;
 
-//   a {
-//     color: #555555;
-//     margin-left: 1.25rem;
-//     padding: 17px 0;
-//     text-decoration: none;
-//   }
+  li {
+    display: inline-flex;
+    font-size: 21px;
+  }
 
-//   a:hover {
-//     color: $principal-color;
-//     text-decoration: none;
-//   }
+  a {
+    color: #555555;
+    margin-left: 1.25rem;
+    padding: 17px 0;
+    text-decoration: none;
+  }
 
-//   .active-menu {
-//     a {
-//       color: $principal-color;
-//     }
-//   }
-// }
+  a:hover {
+    color: $principal-color;
+    text-decoration: none;
+  }
 
-// @media (min-width: $breakpoint-content-section){
-//   .mobile-menu-bar {
-//     display: none;
-//   }
+  .active-menu {
+    a {
+      color: #ffffff;
+    }
+  }
+}
 
-//   .header-menu {
-//     display: block;
-//   }
-// }
+@media (min-width: $breakpoint-content-section){
+  .mobile-menu-bar {
+    display: none;
+  }
+
+  .header-menu {
+    display: block;
+  }
+}
+
+.mobile-menu-icon {
+  color: white;
+}
