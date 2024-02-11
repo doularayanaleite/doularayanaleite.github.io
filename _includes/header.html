@@ -12,12 +12,7 @@
     <nav class="header-menu">
       <ul>
         {% for menu in site.menu %}
-          {% if menu.path == page.url %}
-            <li class="active-menu">
-          {% else %}
-            <li>
-          {% endif %}
-
+            <li class="menu-item">
             <a href="{{ menu.path }}">{{ menu.label }}</a>
           </li>
         {% endfor %}

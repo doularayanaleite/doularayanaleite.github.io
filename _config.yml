@@ -56,13 +56,13 @@ plugins:
 menu:
   - home:
     label: Serviços
-    path: '/'
+    path: '/#services-section'
   - blog:
     label: Depoimentos
-    path: '/'
+    path: '/#testimony-section'
   - about:
     label: Dúvidas Frequentes
-    path: '/'
+    path: '/#faq-section'
   - about:
     label: Contatos
-    path: '/'
+    path: '/#contact-section'
